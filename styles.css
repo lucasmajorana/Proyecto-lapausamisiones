@@ -1,0 +1,161 @@
+/* Fuente personalizada */
+@font-face {
+  font-family: 'Soria';
+  src: url('assets/soria-font.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  margin: 0;
+  font-family: Soria, sans-serif;
+  color: #333;
+  background-color: #fafafa;
+}
+
+header {
+  text-align: center;
+  margin: 1rem 0;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  padding: 0;
+}
+
+nav ul li a {
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  background-color: #faf4df;
+  color: #000;
+  border-radius: 20px;
+  transition: background 0.3s;
+}
+
+nav ul li a:hover {
+  background-color: #eae0c8;
+}
+
+footer {
+  text-align: center;
+  padding: 1rem;
+  background-color: #faf4df;
+  color: #000;
+  border-radius: 8px;
+}
+
+/* Home */
+.mision-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: 2rem;
+  gap: 2rem;
+}
+
+.mision-box {
+  flex: 1;
+  min-width: 250px;
+  padding: 1rem;
+  background-color: #faf4df;
+  border-radius: 8px;
+}
+
+/* Multimedia */
+.multimedia-box video {
+  max-width: 100%;
+  border-radius: 8px;
+}
+
+/* Alojamiento */
+.alojamiento-card {
+  max-width: 800px;
+  margin: 2rem auto;
+  background: #faf4df;
+  padding: 2rem;
+  border-radius: 12px;
+}
+
+.galeria {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap: 0.5rem;
+  margin-top: 1rem;
+}
+
+.galeria img {
+  width: 100%;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+/* Contacto */
+.contacto-contenido {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  flex-wrap: wrap;
+  background: #faf4df;
+  padding: 1rem;
+  border-radius: 8px;
+}
+
+.columna {
+  min-width: 250px;
+}
+
+/* Turismo */
+.turismo-page {
+  max-width: 1000px;
+  margin: 2rem auto;
+  text-align: center;
+}
+
+.carrusel-galeria img {
+  width: 18%;
+  border-radius: 8px;
+  margin: 0 0.2rem;
+  cursor: pointer;
+}
+
+/* Reseñas */
+.resenas-page {
+  max-width: 1000px;
+  margin: 2rem auto;
+}
+
+.resenas-lista {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.resena-card {
+  background: #faf4df;
+  padding: 1rem;
+  border-radius: 8px;
+  width: 250px;
+}
+
+/* Modal */
+.modal {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100vw; height: 100vh;
+  background: rgba(0,0,0,0.85);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: zoom-out;
+  z-index: 9999;
+}
+
+.modal-contenido img {
+  max-width: 90vw;
+  max-height: 90vh;
+  border-radius: 12px;
+}
