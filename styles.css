@@ -7,15 +7,15 @@
 }
 
 body {
-  margin: 0;
+  max-width: 1300px;
+  margin-left: 50px;
   font-family: Soria, sans-serif;
   color: #333;
-  background-color: #fafafa;
 }
 
 header {
-  text-align: center;
-  margin: 1rem 0;
+  max-width: 1300px;
+  margin: 0;
 }
 
 nav ul {
@@ -40,6 +40,7 @@ nav ul li a:hover {
 }
 
 footer {
+  max-width: 1300px;
   text-align: center;
   padding: 1rem;
   background-color: #faf4df;
@@ -52,7 +53,8 @@ footer {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
-  margin: 2rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
   gap: 2rem;
 }
 
